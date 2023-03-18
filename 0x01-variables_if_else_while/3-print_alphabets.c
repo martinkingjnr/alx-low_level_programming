@@ -1,28 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet in lowercase and uppercase.
+ * main - prints the alphabet in lowercase, and then in uppercase
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-        char lowercase[26] = "abcdefghijklmnopqrstuvwxyz";
-        char uppercase[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        int i;
+	char c;
 
-        for (i = 0; i < 26; i++)
-        {
-                putchar(lowercase[i]);
-        }
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
 
-        for (i = 0; i < 26; i++)
-        {
-                putchar(uppercase[i]);
-        }
+	for (c = 'A'; c <= 'Z'; c++)
+		putchar(c);
 
-        putchar('\n');
+	putchar('\n');
 
-        return (0);
+	return (0);
 }
-
