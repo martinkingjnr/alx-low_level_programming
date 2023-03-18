@@ -3,22 +3,24 @@
 /**
  * main - Entry point
  *
+ * Description: Prints the lowercase alphabet except for 'q' and 'e'
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-    char c;
+        char letter;
 
-    for (c = 'a'; c <= 'z'; c++)
-    {
-        if (c != 'e' && c != 'q')
+        for (letter = 'a'; letter <= 'z'; letter++)
         {
-            putchar(c);
+                if (letter != 'e' && letter != 'q')
+                {
+                        putchar(letter);
+                }
         }
-    }
 
-    putchar('\n');
+        putchar('\n');
 
-    return (0);
+        return (0);
 }
-
